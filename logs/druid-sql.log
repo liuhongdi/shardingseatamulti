@@ -1,0 +1,252 @@
+2020-08-20 10:40:37.059 [main] [:] DEBUG druid.sql.Statement - {conn-110001, stmt-120000} created 
+2020-08-20 10:40:37.182 [main] [:] DEBUG druid.sql.Statement - {conn-110001, stmt-120000, rs-150000} query executed. 118.360803 millis. SELECT * FROM `t_order_1` WHERE 1 != 1 
+2020-08-20 10:40:37.193 [main] [:] DEBUG druid.sql.Statement - {conn-110001, stmt-120000} closed 
+2020-08-20 10:40:37.247 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20000} created 
+2020-08-20 10:40:37.251 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20000, rs-50000} query executed. 3.859627 millis. SELECT * FROM `goods` WHERE 1 != 1 
+2020-08-20 10:40:37.266 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20001} created 
+2020-08-20 10:40:37.272 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20001, rs-50001} query executed. 6.168944 millis. SELECT * FROM `undo_log` WHERE 1 != 1 
+2020-08-20 10:40:37.284 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20002} created 
+2020-08-20 10:40:37.291 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20002, rs-50002} query executed. 6.595772 millis. SELECT * FROM `user` WHERE 1 != 1 
+2020-08-20 10:40:37.296 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20000} closed 
+2020-08-20 10:40:37.296 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20001} closed 
+2020-08-20 10:40:37.296 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20002} closed 
+2020-08-20 10:41:22.411 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120001} created. SELECT count(0) FROM t_order_1 
+2020-08-20 10:41:22.414 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120002} created. SELECT count(0) FROM t_order_2 
+2020-08-20 10:41:22.418 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-210001, pstmt-220000} created. SELECT count(0) FROM t_order_3 
+2020-08-20 10:41:22.419 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-210001, pstmt-220001} created. SELECT count(0) FROM t_order_4 
+2020-08-20 10:41:22.450 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120001} Parameters : [] 
+2020-08-20 10:41:22.451 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120001} Types : [] 
+2020-08-20 10:41:22.458 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-210001, pstmt-220000} Parameters : [] 
+2020-08-20 10:41:22.458 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-210001, pstmt-220000} Types : [] 
+2020-08-20 10:41:22.490 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120001} executed. 39.303059 millis. SELECT count(0) FROM t_order_1 
+2020-08-20 10:41:22.491 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120002} Parameters : [] 
+2020-08-20 10:41:22.491 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120002} Types : [] 
+2020-08-20 10:41:22.505 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-210001, pstmt-220000} executed. 47.799807 millis. SELECT count(0) FROM t_order_3 
+2020-08-20 10:41:22.506 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-210001, pstmt-220001} Parameters : [] 
+2020-08-20 10:41:22.506 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-210001, pstmt-220001} Types : [] 
+2020-08-20 10:41:22.542 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-210001, pstmt-220001} executed. 36.304973 millis. SELECT count(0) FROM t_order_4 
+2020-08-20 10:41:22.552 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120002} executed. 61.029929 millis. SELECT count(0) FROM t_order_2 
+2020-08-20 10:41:22.622 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120001} closed 
+2020-08-20 10:41:22.622 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120002} closed 
+2020-08-20 10:41:22.622 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-210001, pstmt-220000} closed 
+2020-08-20 10:41:22.622 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-210001, pstmt-220001} closed 
+2020-08-20 10:41:22.669 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120003} created. select * from t_order_1 order by orderId desc
+ LIMIT ?  
+2020-08-20 10:41:22.669 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120004} created. select * from t_order_2 order by orderId desc
+ LIMIT ?  
+2020-08-20 10:41:22.670 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-210001, pstmt-220002} created. select * from t_order_3 order by orderId desc
+ LIMIT ?  
+2020-08-20 10:41:22.672 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-210001, pstmt-220003} created. select * from t_order_4 order by orderId desc
+ LIMIT ?  
+2020-08-20 10:41:22.675 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-210001, pstmt-220002} Parameters : [5] 
+2020-08-20 10:41:22.675 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-210001, pstmt-220002} Types : [BIGINT] 
+2020-08-20 10:41:22.677 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120003} Parameters : [5] 
+2020-08-20 10:41:22.677 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120003} Types : [BIGINT] 
+2020-08-20 10:41:22.681 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-210001, pstmt-220002} executed. 5.98774 millis. select * from t_order_3 order by orderId desc
+ LIMIT ?  
+2020-08-20 10:41:22.681 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-210001, pstmt-220003} Parameters : [5] 
+2020-08-20 10:41:22.681 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-210001, pstmt-220003} Types : [BIGINT] 
+2020-08-20 10:41:22.683 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120003} executed. 6.785681 millis. select * from t_order_1 order by orderId desc
+ LIMIT ?  
+2020-08-20 10:41:22.684 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-210001, pstmt-220003} executed. 2.555643 millis. select * from t_order_4 order by orderId desc
+ LIMIT ?  
+2020-08-20 10:41:22.684 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120004} Parameters : [5] 
+2020-08-20 10:41:22.685 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120004} Types : [BIGINT] 
+2020-08-20 10:41:22.687 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120004} executed. 2.42669 millis. select * from t_order_2 order by orderId desc
+ LIMIT ?  
+2020-08-20 10:41:22.704 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120003} closed 
+2020-08-20 10:41:22.704 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120004} closed 
+2020-08-20 10:41:22.704 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-210001, pstmt-220002} closed 
+2020-08-20 10:41:22.705 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-210001, pstmt-220003} closed 
+2020-08-20 10:51:11.124 [main] [:] DEBUG druid.sql.Statement - {conn-310001, stmt-320000} created 
+2020-08-20 10:51:11.205 [main] [:] DEBUG druid.sql.Statement - {conn-310001, stmt-320000, rs-350000} query executed. 77.368048 millis. SELECT * FROM `t_order_1` WHERE 1 != 1 
+2020-08-20 10:51:11.209 [main] [:] DEBUG druid.sql.Statement - {conn-310001, stmt-320000} closed 
+2020-08-20 10:51:11.262 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220000} created 
+2020-08-20 10:51:11.269 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220000, rs-250000} query executed. 5.737255 millis. SELECT * FROM `goods` WHERE 1 != 1 
+2020-08-20 10:51:11.284 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220001} created 
+2020-08-20 10:51:11.287 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220001, rs-250001} query executed. 3.120541 millis. SELECT * FROM `undo_log` WHERE 1 != 1 
+2020-08-20 10:51:11.301 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220002} created 
+2020-08-20 10:51:11.304 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220002, rs-250002} query executed. 2.707706 millis. SELECT * FROM `user` WHERE 1 != 1 
+2020-08-20 10:51:11.306 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220000} closed 
+2020-08-20 10:51:11.306 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220001} closed 
+2020-08-20 10:51:11.306 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220002} closed 
+2020-08-20 11:10:24.441 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20000} created 
+2020-08-20 11:10:24.583 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20000, rs-50000} query executed. 132.622971 millis. SELECT * FROM `t_order_1` WHERE 1 != 1 
+2020-08-20 11:10:24.615 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20000} closed 
+2020-08-20 11:10:24.635 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20001} created 
+2020-08-20 11:10:24.637 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20001, rs-50001} query executed. 1.761331 millis. SELECT * FROM `t_order_1` WHERE 1 != 1 
+2020-08-20 11:10:24.653 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20002} created 
+2020-08-20 11:10:24.654 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20002, rs-50002} query executed. 1.212544 millis. SELECT * FROM `t_order_2` WHERE 1 != 1 
+2020-08-20 11:10:24.675 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20003} created 
+2020-08-20 11:10:24.681 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20003, rs-50003} query executed. 4.606363 millis. SELECT * FROM `undo_log` WHERE 1 != 1 
+2020-08-20 11:10:24.691 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20001} closed 
+2020-08-20 11:10:24.692 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20002} closed 
+2020-08-20 11:10:24.692 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20003} closed 
+2020-08-20 11:15:40.473 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20000} created 
+2020-08-20 11:15:40.604 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20000, rs-50000} query executed. 125.702227 millis. SELECT * FROM `t_order_1` WHERE 1 != 1 
+2020-08-20 11:15:40.615 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20000} closed 
+2020-08-20 11:15:40.650 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20001} created 
+2020-08-20 11:15:40.652 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20001, rs-50001} query executed. 1.202283 millis. SELECT * FROM `t_order_1` WHERE 1 != 1 
+2020-08-20 11:15:40.663 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20002} created 
+2020-08-20 11:15:40.671 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20002, rs-50002} query executed. 7.7186 millis. SELECT * FROM `t_order_2` WHERE 1 != 1 
+2020-08-20 11:15:40.686 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20003} created 
+2020-08-20 11:15:40.691 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20003, rs-50003} query executed. 4.159424 millis. SELECT * FROM `undo_log` WHERE 1 != 1 
+2020-08-20 11:15:40.693 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20001} closed 
+2020-08-20 11:15:40.693 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20002} closed 
+2020-08-20 11:15:40.693 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20003} closed 
+2020-08-20 11:17:24.487 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20000} created 
+2020-08-20 11:17:24.633 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20000, rs-50000} query executed. 139.507725 millis. SELECT * FROM `t_order_1` WHERE 1 != 1 
+2020-08-20 11:17:24.642 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20000} closed 
+2020-08-20 11:17:24.661 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20001} created 
+2020-08-20 11:17:24.662 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20001, rs-50001} query executed. 0.9493 millis. SELECT * FROM `t_order_1` WHERE 1 != 1 
+2020-08-20 11:17:24.670 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20002} created 
+2020-08-20 11:17:24.676 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20002, rs-50002} query executed. 5.178264 millis. SELECT * FROM `t_order_2` WHERE 1 != 1 
+2020-08-20 11:17:24.686 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20003} created 
+2020-08-20 11:17:24.690 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20003, rs-50003} query executed. 4.493895 millis. SELECT * FROM `undo_log` WHERE 1 != 1 
+2020-08-20 11:17:24.693 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20001} closed 
+2020-08-20 11:17:24.693 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20002} closed 
+2020-08-20 11:17:24.693 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20003} closed 
+2020-08-20 11:19:53.964 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20000} created 
+2020-08-20 11:19:54.135 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20000, rs-50000} query executed. 165.521934 millis. SELECT * FROM `t_order_1` WHERE 1 != 1 
+2020-08-20 11:19:54.141 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20000} closed 
+2020-08-20 11:19:54.161 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20001} created 
+2020-08-20 11:19:54.162 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20001, rs-50001} query executed. 1.042989 millis. SELECT * FROM `t_order_1` WHERE 1 != 1 
+2020-08-20 11:19:54.171 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20002} created 
+2020-08-20 11:19:54.176 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20002, rs-50002} query executed. 4.622808 millis. SELECT * FROM `t_order_2` WHERE 1 != 1 
+2020-08-20 11:19:54.187 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20003} created 
+2020-08-20 11:19:54.195 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20003, rs-50003} query executed. 7.672258 millis. SELECT * FROM `undo_log` WHERE 1 != 1 
+2020-08-20 11:19:54.198 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20001} closed 
+2020-08-20 11:19:54.198 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20002} closed 
+2020-08-20 11:19:54.198 [main] [:] DEBUG druid.sql.Statement - {conn-10001, stmt-20003} closed 
+2020-08-20 11:20:00.779 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20004} created. SELECT count(0) FROM t_order_1 
+2020-08-20 11:20:00.782 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20005} created. SELECT count(0) FROM t_order_2 
+2020-08-20 11:20:00.784 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120000} created. SELECT count(0) FROM t_order_3 
+2020-08-20 11:20:00.784 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120001} created. SELECT count(0) FROM t_order_4 
+2020-08-20 11:20:00.806 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20004} Parameters : [] 
+2020-08-20 11:20:00.806 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20004} Types : [] 
+2020-08-20 11:20:00.810 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120000} Parameters : [] 
+2020-08-20 11:20:00.810 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120000} Types : [] 
+2020-08-20 11:20:00.871 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20004} executed. 65.058109 millis. SELECT count(0) FROM t_order_1 
+2020-08-20 11:20:00.872 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20005} Parameters : [] 
+2020-08-20 11:20:00.872 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20005} Types : [] 
+2020-08-20 11:20:00.873 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120000} executed. 63.778727 millis. SELECT count(0) FROM t_order_3 
+2020-08-20 11:20:00.876 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120001} Parameters : [] 
+2020-08-20 11:20:00.876 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120001} Types : [] 
+2020-08-20 11:20:00.917 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20005} executed. 44.972377 millis. SELECT count(0) FROM t_order_2 
+2020-08-20 11:20:00.930 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120001} executed. 54.310909 millis. SELECT count(0) FROM t_order_4 
+2020-08-20 11:20:00.985 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20004} closed 
+2020-08-20 11:20:00.986 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20005} closed 
+2020-08-20 11:20:00.986 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120000} closed 
+2020-08-20 11:20:00.987 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120001} closed 
+2020-08-20 11:20:01.084 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20006} created. select * from t_order_1 order by orderId desc
+ LIMIT ?  
+2020-08-20 11:20:01.088 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20007} created. select * from t_order_2 order by orderId desc
+ LIMIT ?  
+2020-08-20 11:20:01.089 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120002} created. select * from t_order_3 order by orderId desc
+ LIMIT ?  
+2020-08-20 11:20:01.093 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120003} created. select * from t_order_4 order by orderId desc
+ LIMIT ?  
+2020-08-20 11:20:01.096 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120002} Parameters : [5] 
+2020-08-20 11:20:01.096 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120002} Types : [BIGINT] 
+2020-08-20 11:20:01.101 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20006} Parameters : [5] 
+2020-08-20 11:20:01.101 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20006} Types : [BIGINT] 
+2020-08-20 11:20:01.104 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120002} executed. 7.975539 millis. select * from t_order_3 order by orderId desc
+ LIMIT ?  
+2020-08-20 11:20:01.105 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20006} executed. 4.358358 millis. select * from t_order_1 order by orderId desc
+ LIMIT ?  
+2020-08-20 11:20:01.105 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120003} Parameters : [5] 
+2020-08-20 11:20:01.105 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120003} Types : [BIGINT] 
+2020-08-20 11:20:01.105 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20007} Parameters : [5] 
+2020-08-20 11:20:01.105 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20007} Types : [BIGINT] 
+2020-08-20 11:20:01.108 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20007} executed. 2.554395 millis. select * from t_order_2 order by orderId desc
+ LIMIT ?  
+2020-08-20 11:20:01.109 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120003} executed. 3.789289 millis. select * from t_order_4 order by orderId desc
+ LIMIT ?  
+2020-08-20 11:20:01.119 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20006} closed 
+2020-08-20 11:20:01.119 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20007} closed 
+2020-08-20 11:20:01.119 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120002} closed 
+2020-08-20 11:20:01.120 [http-nio-8080-exec-2] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120003} closed 
+2020-08-20 11:20:03.707 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20008} created. SELECT count(0) FROM t_order_1 
+2020-08-20 11:20:03.709 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20009} created. SELECT count(0) FROM t_order_2 
+2020-08-20 11:20:03.710 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120004} created. SELECT count(0) FROM t_order_3 
+2020-08-20 11:20:03.710 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120005} created. SELECT count(0) FROM t_order_4 
+2020-08-20 11:20:03.712 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120004} Parameters : [] 
+2020-08-20 11:20:03.712 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120004} Types : [] 
+2020-08-20 11:20:03.726 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20008} Parameters : [] 
+2020-08-20 11:20:03.730 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120004} executed. 18.439783 millis. SELECT count(0) FROM t_order_3 
+2020-08-20 11:20:03.730 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120005} Parameters : [] 
+2020-08-20 11:20:03.730 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120005} Types : [] 
+2020-08-20 11:20:03.747 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20008} Types : [] 
+2020-08-20 11:20:03.766 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120005} executed. 35.116008 millis. SELECT count(0) FROM t_order_4 
+2020-08-20 11:20:03.782 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20008} executed. 55.627247 millis. SELECT count(0) FROM t_order_1 
+2020-08-20 11:20:03.783 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20009} Parameters : [] 
+2020-08-20 11:20:03.785 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20009} Types : [] 
+2020-08-20 11:20:03.795 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20009} executed. 12.414622 millis. SELECT count(0) FROM t_order_2 
+2020-08-20 11:20:03.801 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20008} closed 
+2020-08-20 11:20:03.802 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20009} closed 
+2020-08-20 11:20:03.802 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120004} closed 
+2020-08-20 11:20:03.802 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120005} closed 
+2020-08-20 11:20:03.807 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20010} created. select * from t_order_1 order by orderId desc
+ LIMIT ?  
+2020-08-20 11:20:03.808 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20011} created. select * from t_order_2 order by orderId desc
+ LIMIT ?  
+2020-08-20 11:20:03.808 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120006} created. select * from t_order_3 order by orderId desc
+ LIMIT ?  
+2020-08-20 11:20:03.809 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120007} created. select * from t_order_4 order by orderId desc
+ LIMIT ?  
+2020-08-20 11:20:03.811 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120006} Parameters : [5] 
+2020-08-20 11:20:03.811 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120006} Types : [BIGINT] 
+2020-08-20 11:20:03.814 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120006} executed. 3.169246 millis. select * from t_order_3 order by orderId desc
+ LIMIT ?  
+2020-08-20 11:20:03.814 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120007} Parameters : [5] 
+2020-08-20 11:20:03.814 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120007} Types : [BIGINT] 
+2020-08-20 11:20:03.828 [ShardingSphere-0] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120007} executed. 13.485081 millis. select * from t_order_4 order by orderId desc
+ LIMIT ?  
+2020-08-20 11:20:03.829 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20010} Parameters : [5] 
+2020-08-20 11:20:03.829 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20010} Types : [BIGINT] 
+2020-08-20 11:20:03.832 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20010} executed. 2.811553 millis. select * from t_order_1 order by orderId desc
+ LIMIT ?  
+2020-08-20 11:20:03.835 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20011} Parameters : [5] 
+2020-08-20 11:20:03.835 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20011} Types : [BIGINT] 
+2020-08-20 11:20:03.836 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20011} executed. 1.569121 millis. select * from t_order_2 order by orderId desc
+ LIMIT ?  
+2020-08-20 11:20:03.851 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20010} closed 
+2020-08-20 11:20:03.851 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-10001, pstmt-20011} closed 
+2020-08-20 11:20:03.851 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120006} closed 
+2020-08-20 11:20:03.852 [http-nio-8080-exec-3] [:] DEBUG druid.sql.Statement - {conn-110001, pstmt-120007} closed 
+2020-08-20 11:37:10.045 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220000} created 
+2020-08-20 11:37:10.048 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220000, rs-250000} query executed. 2.862295 millis. SELECT * FROM `t_order_1` WHERE 1 != 1 
+2020-08-20 11:37:10.050 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220000} closed 
+2020-08-20 11:37:10.068 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220001} created 
+2020-08-20 11:37:10.069 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220001, rs-250001} query executed. 0.974816 millis. SELECT * FROM `t_order_1` WHERE 1 != 1 
+2020-08-20 11:37:10.080 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220002} created 
+2020-08-20 11:37:10.083 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220002, rs-250002} query executed. 3.354027 millis. SELECT * FROM `t_order_2` WHERE 1 != 1 
+2020-08-20 11:37:10.104 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220003} created 
+2020-08-20 11:37:10.108 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220003, rs-250003} query executed. 3.95717 millis. SELECT * FROM `undo_log` WHERE 1 != 1 
+2020-08-20 11:37:10.116 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220001} closed 
+2020-08-20 11:37:10.116 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220002} closed 
+2020-08-20 11:37:10.116 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220003} closed 
+2020-08-20 11:47:26.175 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220000} created 
+2020-08-20 11:47:26.252 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220000, rs-250000} query executed. 72.360407 millis. SELECT * FROM `t_order_1` WHERE 1 != 1 
+2020-08-20 11:47:26.256 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220000} closed 
+2020-08-20 11:47:26.271 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220001} created 
+2020-08-20 11:47:26.272 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220001, rs-250001} query executed. 0.884017 millis. SELECT * FROM `t_order_1` WHERE 1 != 1 
+2020-08-20 11:47:26.282 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220002} created 
+2020-08-20 11:47:26.283 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220002, rs-250002} query executed. 0.853322 millis. SELECT * FROM `t_order_2` WHERE 1 != 1 
+2020-08-20 11:47:26.293 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220003} created 
+2020-08-20 11:47:26.296 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220003, rs-250003} query executed. 2.486677 millis. SELECT * FROM `undo_log` WHERE 1 != 1 
+2020-08-20 11:47:26.298 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220001} closed 
+2020-08-20 11:47:26.298 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220002} closed 
+2020-08-20 11:47:26.298 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220003} closed 
+2020-08-20 11:49:16.413 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220000} created 
+2020-08-20 11:49:16.482 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220000, rs-250000} query executed. 66.592201 millis. SELECT * FROM `t_order_1` WHERE 1 != 1 
+2020-08-20 11:49:16.488 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220000} closed 
+2020-08-20 11:49:16.508 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220001} created 
+2020-08-20 11:49:16.514 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220001, rs-250001} query executed. 5.665439 millis. SELECT * FROM `t_order_1` WHERE 1 != 1 
+2020-08-20 11:49:16.530 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220002} created 
+2020-08-20 11:49:16.539 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220002, rs-250002} query executed. 9.194833 millis. SELECT * FROM `t_order_2` WHERE 1 != 1 
+2020-08-20 11:49:16.555 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220003} created 
+2020-08-20 11:49:16.558 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220003, rs-250003} query executed. 2.483029 millis. SELECT * FROM `undo_log` WHERE 1 != 1 
+2020-08-20 11:49:16.560 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220001} closed 
+2020-08-20 11:49:16.560 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220002} closed 
+2020-08-20 11:49:16.560 [main] [:] DEBUG druid.sql.Statement - {conn-210001, stmt-220003} closed 
